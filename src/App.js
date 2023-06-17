@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-	BrowserRouter,
+	HashRouter,
 	Routes,
 	Route,
 } from "react-router-dom";
@@ -11,12 +11,12 @@ import Search from './pages/search/Search';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 		  <Routes>
 			<Route path="/" element={<Browse/>}/>
 			<Route path="/search" element={<Search/>}/>
 		  </Routes>
-		</BrowserRouter>
+		</HashRouter>
 	  );
 }
 
